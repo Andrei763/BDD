@@ -38,7 +38,7 @@ public class MoneyTransferTest {
         assertEquals(expectedDBalanceSecondCard, actualBalanceSecondCard);
     }
 
-    @Test
+   @Test
     void shouldGetErrormessageIfAbountMore() {
         var firstCardInfo = getFirstCardInfo();
         var secondCardInfo = getSecondCardInfo();
