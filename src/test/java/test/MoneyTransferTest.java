@@ -20,7 +20,6 @@ public class MoneyTransferTest {
         var verificationCode = getVerificationCode();
         dashboardPage = verificationPage.validVerify(verificationCode);
     }
-
     @Test
     void shouldTransferFromFirstToSecond() {
         var firstCardInfo = getFirstCardInfo();
@@ -37,7 +36,6 @@ public class MoneyTransferTest {
         assertEquals(expectedDBalanceFirstCard, actualBalanceFirstCard);
         assertEquals(expectedDBalanceSecondCard, actualBalanceSecondCard);
     }
-
    @Test
     void shouldGetErrormessageIfAbountMore() {
         var firstCardInfo = getFirstCardInfo();
